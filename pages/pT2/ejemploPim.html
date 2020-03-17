@@ -23,10 +23,15 @@
               <div class="col">
                 <select id="inputState" class="form-control">
                 <option selected>Funcion suma</option>
-                <option>...</option>
+                <option>Funcion multiplicacion</option>
               </select>
               </div>
             </div>
           </form>
+          <label id="funcionselect"></label>
+          <script>
+              var sel = document.getElementById('inputState');
+              document.getElementById('funcionselect').innerHTML = sel.options[sel.SelectedIndex].text;
+          </script>
     </body>
 </html>
