@@ -26,13 +26,14 @@
 
 		<div class="container-sm">
 			<!-- Inicio Carta-->
-			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="algoritmo">
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="axiomas">
 				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">AXIOMAS</p>
 				<hr size="2px" color="black" />
 				<div class="row no-gutters">
 					<div class="col">
 						<div class="card-body">
 							<p class="card-text card-content text-justify">
+								Los axiomas que definen a los numeros naturales son:<br>
 								1- Hay un elemento especial 0 ∈ N.<br>
 								2- Para todo n ∈ N existe un  ́unico elemento n+ ∈ N llamado el sucesor de n. <br>
 								3- Para todo n ∈ N, n+ ≠ 0. <br>
@@ -40,7 +41,8 @@
 								5- Si S es un subconjunto de N tal que:<br>
 								&nbsp a- 0 ∈ S,<br>
 								&nbsp b- n+ ∈ S siempre que n ∈ S, entonces S = N.<br>
-								(Jiménez L., Gordillo J., & Rubiano G., 2004).
+								(Jiménez L., Gordillo J., & Rubiano G., 2004).<br>
+								El axioma numero 5 es coocido como Principio de Induccion Matematica (PIM)
 							</p>
 						</div>
 					</div>
@@ -49,19 +51,20 @@
 			<!-- Fin Carta-->
 
 			<!-- Inicio Carta-->
-			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
-				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿Quién fue Euclides?</p>
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="peano">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿Quién fue Peano?</p>
 				<hr size="2px" color="black" />
 				<div class="row no-gutters">
 					<div class="col my-3 mx-3 text-center">
-						<img src="../../resources/rT1/euclidesImg.jpg" class="rounded" width="600px" height="400px" alt="Euclides">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Giuseppe_Peano.jpg/220px-Giuseppe_Peano.jpg" class="rounded" height="400px" alt="Giuseppe Peano">
 					</div>
 					<div class="col">
 						<div class="card-body">
 							<p class="card-text card-content text-justify">
-								“Euclides de Alejandría. Nació alrededor de 325 AC y murió alrededor de 265 AC en Alejandría, Egipto. Euclides de Alejandría es el matemático más prominente de la antigüedad mejor conocido por su tratado sobre matemáticas llamado Los
-								Elementos. La vigencia de Los Elementos hace de Euclides el principal maestro de matemáticas de todos los tiempos.” (Prieto C., s.f). <br>
-								El algoritmo de Euclides fue presentado en su libro “Elementos” (Jiménez L., Gordillo J., & Rubiano G., 2004).
+								Fue un matematico italiano nacido en 1858 en Spinetta, Italia, murió en 1932 en Turin, Italia. Se casó en 1887 pero no tuvo hijos.
+								Estudió en la Universidad de Turin hasta 1880 y fue nombrado profesor en 1890, puesto que ocupó hasta su muerte.
+								La axiomatización de los números naturales, trabajada en 1889 fue descirta en su insigne texto Arithmetice Principia Nova Methodo Exposita.
+								 (Antezana Iparraguirre, R., 2019).
 							</p>
 						</div>
 					</div>
@@ -71,47 +74,58 @@
 
 			<!-- Inicio Carta-->
 			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
-				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Suma de n numeros</p>
 				<hr size="2px" color="black" />
 				<p class="card-text card-content mx-auto my-auto text-justify">
-					Para calcular el MCD de 328 y 26 se tienen dos opciones.<br>
-					(a) descomposición en números primos <br>
-					(b) algoritmo de Euclides<br><br>
-					Nota: El MCD de los números a y b también puede escribirse como (a,b).
-				</p>
-				<hr size="2px">
-				</hr>
-				<div class="row no-gutters">
-					<div class="col mx-3 my-auto text-center">
-						<img src="../../resources/rT1/ej1-euclidesPage.png" class="rounded" width="500px" height="550px" alt="ejemplo1">
-					</div>
-					<div class="col">
-						<div class="card-body">
-							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
-							<hr size="2px">
-							</hr>
-							<p class="text-justify">
-								Lo que hicimos fue dividir el mayor de los dos números del MCD por el menor, tal que:<br>
-								<center>328/26</center><br>
-								<p class="text-justify">
-									Luego representamos esto diciendo que 328 es igual a X veces 26 más su residuo.<br>
-									<center>328 = (12)*26 + 16</center><br>
-									<p class="text-justify">
-										En el siguiente paso dividimos 26 por su residuo, y volvimos a representar como x veces 16 más el residuo.<br>
-										<center>26 = (1)*16 + 10</center><br>
-										<p class="text-justify">
-											Esto lo repetimos hasta que el residuo sea cero.<br>
-											<center>6 = (1)*4 + 2</center><br>
-											<center>4 = (2)*2+0</center><br>
-											<p class="text-justify">
-												Entonces el resultado del MCD para ambos números se encuentra como el residuo de la penúltima línea. En este caso se observa (328, 26) = 2
-												Una explicación más teórica del método se encuentra en el apartado 2.3 del libro “Teoría de números para principiantes” de Jiménez L., Gordillo J., & Rubiano G., 2004).<br>
-											</p>
-						</div>
-					</div>
-				</div>
+					El PIM es usado para ciertas demostraciones en un conjunto de numeros naturales. Por ejemplo, la suma de n numeros naturales esta dada por Sn = 1+2+3+...+n<br>
+					En este caso es usado para validar siguiente expresion:<br><br>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Pasos</th>
+								<th scope="col">Descripcion</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td><img src="../../resources/rT2/suma1.gif"></td>
+								<td>Se supone que la suma de n numeros naturales esta dada por la expresión</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td><img src="../../resources/rT2/suma2.gif"></td>
+								<td>Para n=1 la expresion se cumple</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td><img src="../../resources/rT2/suma3.gif"></td>
+								<td>Se define S(n+1) como la S(n) + (n+1)</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td><img src="../../resources/rT2/suma4.gif"></td>
+								<td>Por (1) y (3), la expresion para S(n+1) es igual a la suma de la expresion para S(n) más (n+1)</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td><img src="../../resources/rT2/suma5.gif"></td>
+								<td>Se operan los sumando para ser expresados como fracciones</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td><img src="../../resources/rT2/suma6.gif"></td>
+								<td>Se realiza la suma de los terminos y se factoriza el resultado</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="card-text card-content mx-auto my-auto text-justify">
+					Por lo tanto la expresion para S(n) se cumple para S(n+). Si se aplica la exprision con n=1 obtenemos su verificacion para n=2.
+					Similarmente se verifica n=3, n=4, n= 5, etc. Así se deduce que la expresion se cumple para todo n ∈ N.
+					</p>
+			</p>
 			</div>
-			<!-- Fin Carta-->
 
 			<div class="container">
 				<footer>
